@@ -10,10 +10,10 @@ void main() {
   test("Testing curve value", (){
     expect(5+2, 7);
     CustomCurve curve = CustomCurve();
-    expect(curve.transforminternal(.15),0.0);
-    expect(curve.transforminternal(.19),0.0);
-    expect(curve.transforminternal(.61),0.0);
-    expect(curve.transforminternal(.75),0.0);
+    expect(curve.transformInternal(.15),0.0);
+    expect(curve.transformInternal(.19),0.0);
+    expect(curve.transformInternal(.61),0.0);
+    expect(curve.transformInternal(.75),0.0);
 
     expect(curve.transform(.25),Curves.ease.transform(.25));
     expect(curve.transform(.3),Curves.ease.transform(.5));
