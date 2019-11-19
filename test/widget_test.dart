@@ -19,10 +19,10 @@ void main() {
     expect(curve.transform(.3),Curves.ease.transform(.5));
     expect(curve.transform(.35),Curves.ease.transform(.75));
     expect(curve.transform(.4),Curves.ease.transform(1));
-    expect(curve.transform(.45),Curves.decelerate.transform(.25));
+    expect(curve.transform(.45),Curves.decelerate.transform(.75));
     expect(curve.transform(.5),Curves.decelerate.transform(.5));
-    expect(curve.transform(.55),Curves.decelerate.transform(.75));
-    expect(curve.transform(.6),Curves.decelerate.transform(1));
+    expect(curve.transform(.55),Curves.decelerate.transform(.25));
+    expect(curve.transform(.6),Curves.decelerate.transform(0));
 
   });
 }
