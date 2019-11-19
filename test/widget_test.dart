@@ -15,14 +15,14 @@ void main() {
     expect(curve.transforminternal(.61),0.0);
     expect(curve.transforminternal(.75),0.0);
 
-    expect(curve.transforminternal(.25),Curves.ease.transformInternal(.25));
-    expect(curve.transforminternal(.3),Curves.ease.transformInternal(.5));
-    expect(curve.transforminternal(.35),Curves.ease.transformInternal(.75));
-    expect(curve.transforminternal(.4),Curves.ease.transformInternal(1));
-    expect(curve.transforminternal(.45),Curves.decelerate.transformInternal(.25));
-    expect(curve.transforminternal(.5),Curves.decelerate.transformInternal(.5));
-    expect(curve.transforminternal(.55),Curves.decelerate.transformInternal(.75));
-    expect(curve.transforminternal(.6),Curves.decelerate.transformInternal(1));
+    expect(curve.transform(.25),Curves.ease.transform(.25));
+    expect(curve.transform(.3),Curves.ease.transform(.5));
+    expect(curve.transform(.35),Curves.ease.transform(.75));
+    expect(curve.transform(.4),Curves.ease.transform(1));
+    expect(curve.transform(.45),Curves.decelerate.transform(.25));
+    expect(curve.transform(.5),Curves.decelerate.transform(.5));
+    expect(curve.transform(.55),Curves.decelerate.transform(.75));
+    expect(curve.transform(.6),Curves.decelerate.transform(1));
 
   });
 }
