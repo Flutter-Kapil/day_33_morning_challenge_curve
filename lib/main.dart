@@ -13,3 +13,9 @@ class _AnimatedDotsState extends State<AnimatedDots> {
     return Container();
   }
 }
+class CustomCurve extends Curve{
+@override
+  double transforminternal(double t){
+  return 0 ;
+}
+}
